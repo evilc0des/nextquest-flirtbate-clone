@@ -2,7 +2,7 @@
 
 A modern, responsive web application built with Next.js and React for adult video chat services.
 
-Live Demo: https://flirtbate.vercel.app/
+Live Demo: https://nextquest-flirtbate-clone.vercel.app/
 
 ## Features
 
