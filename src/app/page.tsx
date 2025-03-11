@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import logo from "../../public/new-logo.webp";
-import { ArrowRightEndOnRectangleIcon, CameraIcon, MagnifyingGlassIcon, UserIcon, VideoCameraIcon } from "@heroicons/react/16/solid";
+import { ArrowRightEndOnRectangleIcon, MagnifyingGlassIcon, UserIcon, VideoCameraIcon } from "@heroicons/react/16/solid";
 import SignupModal from "@/components/SignupModal";
 import MODELS from "@/constants/models";
 import ModelGrid from "@/components/ModelGrid";
 export default function Home() {
   const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
-  const [models, setModels] = useState(MODELS.map((model) => ({
+  const [models] = useState(MODELS.map((model) => ({
     ...model,
     online: true,
     favorite: false,
